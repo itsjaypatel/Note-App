@@ -1,0 +1,19 @@
+<div class="card h-100" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"><%= title %></h5>
+        <% let readMoreLink = null  %>
+        <% if(description.length > 50){ %>
+        <% readMoreLink = "read more..." %>
+        <% description = description.substr(0,50)  %>
+        <% }%>
+        <p class="card-text">
+            <%= description %>
+            <% if(readMoreLink !== null) {%>
+                <a href="../view/<%= id %>" style="text-decoration: none;"><%= readMoreLink %> </a>
+            <% }%>
+        </p>
+        <%- include('deleteBtn', {id : id}); %>
+        <%- include('viewBtn', {id : id}); %>
+        <%- include('editBtn', {id : id}); %>
+    </div>
+</div>

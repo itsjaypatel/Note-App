@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100vh;">
+            <h2>Create Note</h2>
+            <form class="form-group row" method="post">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title of Blog"
+                        name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Write Something.." name="description" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" value="important" name="important">
+                    <label class="form-check-label" for="exampleCheck1">&nbsp; Important</label>
+                  </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <a href="../" class="btn btn-secondary" value="Cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
